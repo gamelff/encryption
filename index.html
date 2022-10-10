@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="encode" style="float:right; width:50%">
+      <label>Encode</label>
+      <input id="encodeText" placeholder="Text to Encode"  type="text">
+      <input id="timesEncode" placeholder="Times To Encode" type="number" min="0" max="50" value=1>
+      <input type="button" value="Submit" onclick="encodeSubmit()">
+    </form>
+    <form id="decode" style="float:left">
+      <label>Decode</label>
+      <input id="decodeText" placeholder="Text to decode" type="text">
+      <input id="timesDecode" placeholder="Times To Decode" type="number" min="0" max="50">
+      <input type="button" value="Submit" onclick="decodeSubmit()">
+    </form>
+    <br><br>
+    <p id="encodeList" style="float:right; word-wrap: break-word; width: 50%">
+      <b>Encode</b>
+    </p>
+    <p id="decodeList" style="float:left; word-wrap: break-word; width: 50%">
+      <b>decode</b>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
